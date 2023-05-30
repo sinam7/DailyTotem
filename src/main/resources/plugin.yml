@@ -1,0 +1,24 @@
+name: DailyTotem
+version: 1.1
+main: com.sinam7.dailytotem.Main
+description: Daily Free resurrection chance
+author: sinam7
+website: https://github.com/sinam7
+api-version: 1.19
+
+commands:
+  dt:
+    description: reload config
+    usage: /<command>
+    permission: dailytotem.reload
+  freetotem:
+    description: Check your daily free totem status
+    usage: /<command>
+    permission: dailytotem.check
+permissions:
+  dailytotem.*:
+    default: op
+  dailytotem.reload:
+    default: op
+  dailytotem.check:
+    default: true
